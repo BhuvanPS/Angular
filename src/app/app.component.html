@@ -1,9 +1,38 @@
 
 
-<button (click)="button1()" >1</button>
-<button (click)="button2()" >2</button>
-<button  (click)="button3()">3</button>
-<router-outlet>
-  
-</router-outlet>
 
+<!--
+    <p [ngClass]="'large-text green-text highlight'">hiiiii</p>
+
+<p [ngClass]="myStyles">Hello World</p>
+<button
+    (click)="onEnlarge()">Enlarge</button>
+    <button (click)="onHighlight()">Highlight</button>
+    <button (click)="onGreen()">Green</button>
+-->
+
+<!--
+    <ng-template [ngIf]="true">
+    <div>Hello World</div>
+</ng-template>
+
+<div [ngSwitch]="expression">
+    <div *ngSwitchCase="1">view1</div>
+    <div *ngSwitchCase="2">view2</div>
+    <div *ngSwitchCase="3">view3</div>
+    <div *ngSwicthDefault>Default View</div>
+</div>
+
+<div *ngFor="let article of articles; index as i">
+   <p>{{i}}</p>
+    <h1>{{article.title}}</h1>
+    <p>{{article.description}}</p>
+</div>
+-->
+<app-routing>
+
+</app-routing>
+
+<p>
+    {{myNumber | multiply :15|number:"3.2"}}
+</p>
